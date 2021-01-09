@@ -1,0 +1,192 @@
+<html>
+<head>
+    <title></title>
+    	<!-- 	CDN -->
+
+	<link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Gayathri&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- end CDN -->
+
+	<!-- google font -->
+	<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+	<!-- end of google font -->
+
+	<!--   highlight js -->
+    <script src="/path/to/highlight.min.js"></script>
+    
+    <link rel="stylesheet" href="sstyle.css">
+    
+</head>
+<body>
+    <h1 style="text-align:center;font-family: Amarnath; color:brown;opacity:0.9;background-color:cyan">Simulator for Checking Palindrome String or Number </h1>
+
+<div class="container">
+
+    <div id="one">
+    
+
+            
+        <button id="bt-1" class="btn btn-dark btn-sm " onclick="bt1()"  style="display: block;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-2" class="btn btn-dark btn-sm " onclick="bt2()"  style="display: none;"> <span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-3" class="btn btn-dark btn-sm " onclick="bt3()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <!-- <button id="bt-4" class="btn btn-dark" onclick="bt4()"><span style="margin-right: auto;"></span><i class="fa fa-code" style="font-size:36px"></i></button> -->
+        <button id="bt-4" class="btn btn-dark btn-sm " onclick="bt4()"x  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-5" class="btn btn-dark btn-sm " onclick="bt5()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-file" style="font-size:36px"></i></button>
+        <button id="bt-6" class="btn btn-dark btn-sm " onclick="bt6()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-pencil" style="font-size:36px"></i></button>
+        <button id="bt-7" class="btn btn-dark btn-sm " onclick="bt7()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-8" class="btn btn-dark btn-sm " onclick="bt8()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-9" class="btn btn-dark btn-sm " onclick="bt9()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-10" class="btn btn-dark btn-sm " onclick="bt10()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+        <button id="bt-11" class="btn btn-dark btn-sm " onclick="bt11()"  style="display: none;"><span style="margin-right: auto;"></span><i class="fa fa-forward" style="font-size:36px"></i></button>
+
+                
+
+        <div id="program">
+
+            
+            <span id="c1">
+                    
+                #include &lt;stdio.h&gt;<br>
+                #include &lt;string.h&gt;<br>
+            </span>
+            <span id="c2">
+                int main(){
+                    <br></span>
+                    <span id="c3">
+                        <br>
+
+                    char string1[20];<br>
+                    int i, length;<br>
+                    int flag = 0;<br>
+                </span>
+                <span id="c4">
+                    printf("Enter String:");<br>
+                    scanf("%s", string1);<br>
+                </span>
+
+                <span id="c5">
+                    length = strlen(string1);<br>
+                </span>
+                    <span id="c6">
+                    for(i=0;i &lt; length ;i++){<br>
+                    </span>
+                       <span id="c7">if(string1[i] != string1[length-i-1]){<br>
+                            flag = 1;<br>
+                            break;<br>
+
+                   }</span> 
+                }
+                    
+                   <span id="c8"> if (flag) {<br>
+                        printf("%s is not a palindrome", string1);<br>
+                    }    </span>
+                    <span id="c9">
+                    else {<br>
+                        printf("%s is a palindrome", string1);<br>
+                    }
+                </span>
+                <span id="c10">
+                    
+                    return 0;
+                }<br>
+                
+            </span>
+
+        </div>
+
+            
+        
+
+
+
+    </div>
+
+
+
+    <div id="two">
+
+        <h1 style="color:violet;text-align:center">What does Our Program do? </h1>
+
+        <div class="love">
+            <span id="t1">Header files:<br><i> Are used to include librery files</i>
+                
+                
+                <br> </span>
+            <span id="t2">Main function:<br><i>This is the entry point of Program.</i><br></span>
+            <span id="t3">Declear Variables:
+                <i>string1,i and flag            </i> <br></span>
+            <span id="t4">Enter String<br> </span>
+
+            <span id="t5">Calculated String length here<br></span>
+            <span id="t6">Here the Loop start from 0 and<br> goes till length of the string<br> </span>
+            <span id="t7">Checks whether <i>[ith]</i> from start and  <i>[length-ith-1]</i> from end character of string matchs,<br>
+            If not, assign flag variable 1 value and break otherwise loop continues till Length and exit<br>
+            </span>
+            <span id="t8">
+                If flag returned from the code is 1 than string not Palendroom<br>
+
+
+            </span>
+            <span id="t9">
+                Otherwise if flag variable value is 0 then string palendroom.<br>
+            </span>
+            <span id="t10">Program exited successfully.<br></span>
+            <span id="t11"></span>
+            <span id="t12"></span>
+
+
+
+
+        </div>
+
+        <div id="love1" style="display: none;text-align: center; border: 2px dashed blue;"  >
+
+            
+<h5>Enter String</h5> <input type="text" id="myText" placeholder="Enter String Here ">
+
+<p id="ii">Click the button to change the value of the text field.</p>
+
+<button onclick="myFunction()" class="btn btn-dark" style="font-family: cursive;font-family: bold;">Try it</button>
+
+
+
+
+
+
+        </div>
+        
+
+
+
+    </div>
+    <div id="three"></div>
+
+    
+<script>
+    function myFunction() {
+    
+        
+        var str=document.getElementById("myText").value ;
+        var rev=str.split("").reverse().join("");
+        if (str==rev){
+            document.getElementById("ii").innerHTML="<h1>"+str+" is palindrome.</h1>";
+        }
+        else{
+            document.getElementById("ii").innerHTML="<h1>"+str+" is not palindrome.</h1>";
+    
+    
+        }
+    }
+    </script>
+</div>
+
+<script src="logic.js"></script>
+
+</body>
+
+</html>
